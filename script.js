@@ -64,13 +64,11 @@ function nextQuestion() {
             e.preventDefault();
             progress++;
             $('#quiz-box').empty();
-            $('.reaction').empty();
             getQuestion();
         });
     } else {
         $('#next').on('click', e => {
             e.preventDefault();
-            $('.reaction').empty();
             $('#quiz-box').empty();
             finalScore();
         });
