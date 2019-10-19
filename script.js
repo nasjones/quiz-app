@@ -91,8 +91,8 @@ function finalScore() {
     $('.progress').empty();
     $('#quiz-box').append(
         `<p class = "results">You've finished the quiz your final results are ${grade}/${length}<br>Click the button below if you'd like to take it again!</p>  
-      <button type="button" id="reset">Reset</button>`
-    );
+    <button type="button" id="reset">Reset</button>
+    <img src="https://media3.giphy.com/media/KfyoEBbzEKc3C/source.gif">`);
     $('#reset').on('click', e => {
         $('#intro-pic').show();
         $('#prompt').show();
