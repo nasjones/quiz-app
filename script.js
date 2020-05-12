@@ -28,7 +28,7 @@ function quizBoxHtml(pass) {
     for (var i = pass.choices.length - 1; i >= 0; i--) {
         let r = Math.floor(Math.random() * (i + 1));
         currentChoice = tempChoices.splice(r, 1);
-        $('#question-container').append(`<label><input id="choice" type="radio" name="choice" value="${currentChoice}">${currentChoice}</label><br>`);
+        $('#question-container').append(`<label><input id="choice" type="radio" name="choice" value="${currentChoice}">${currentChoice}</label>`);
     }
     $('#quiz-box').append(`</div><button type="button" id="submit">Submit</button>`);
 }
